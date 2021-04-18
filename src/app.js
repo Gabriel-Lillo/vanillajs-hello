@@ -6,7 +6,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  Document.querySelector("#excuse").innerHTML = generateExcuse();
+  document.querySelector("#excuse").innerHTML = generateExcuse();
   console.log("Hello Rigo from the console!");
 };
 
@@ -22,8 +22,8 @@ let generateExcuse = () => {
   ];
 
   let whoIn = Math.floor(Math.random() * who.length);
-  let whatIn = Math.floor(Math.random() * who.length);
-  let whenIn = Math.floor(Math.random() * who.length);
+  let whatIn = Math.floor(Math.random() * what.length);
+  let whenIn = Math.floor(Math.random() * when.length);
 
   return who[whoIn] + " " + what[whatIn] + " " + when[whenIn];
 };
